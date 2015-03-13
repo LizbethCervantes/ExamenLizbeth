@@ -30,7 +30,7 @@ btnEnvio.click(function enviarDatos(){
     /*alert("Listo");*/
     $.ajax({
         type:"POST",
-        url:"envio.php",
+        url:"http://cpanel.260mb.net/envio.php",
         data:"nombre="+nom+"&apellidop="+app+"&apellidom="+apm+"&direccion="+direccion+"&telefono="+tel+"&email="+email+"&carrera="+carrera+"&numeroctrl="+numeroctrl+"&semestre="+semestre,
         success: recepcion
         });
@@ -58,7 +58,7 @@ r.val(result);
     /*alert("Listo");*/
     $.ajax({
         type:"POST",
-        url:"envio1.php",
+        url:"http://cpanel.260mb.net/envio1.php",
         data:"primerp="+pp+"&segundop="+sp+"&tercerp="+tp+"&cuartop="+cp+"&promedio="+result,
         success: recepcion2
          });
